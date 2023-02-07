@@ -1,0 +1,82 @@
+package model;
+
+import java.util.Scanner;
+
+public class Attendance {
+	String name;
+    String password;
+    int id;
+    String section;
+    String course;
+    
+//    public Attendance(String name,String password,String email, String id, String section,String course) {
+//    	this.name=name;
+//    	this.password=password;
+//    	this.id=id;
+//    	this.course=course;
+//    	this.section=section;
+//    }
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getSection() {
+		return section;
+	}
+
+	public void setSection(String section) {
+		this.section = section;
+	}
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+    
+    public void chooseCourse(String course) {
+    	Scanner sc= new Scanner(System.in);  
+    	String c = sc.next();
+    }
+    
+    public void chooseSection(String section) {
+    	Scanner sc= new Scanner(System.in);  
+    	String s = sc.next();
+    }
+    
+    public void viewAttendance() {
+    	
+    }
+    
+    public void getReport(String name, String course) {
+    	User u = new User();
+    	System.out.print(u);
+    	
+    }
+    
+
+}
